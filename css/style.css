@@ -49,24 +49,11 @@ nav #nav-item{
 	text-align: center;
 	color: white;
 	cursor: pointer;
-	padding-left: 1%;
-	padding-right: 1%;
+	padding-left: 5px;
+	padding-right: 5px;
 	white-space: nowrap;
 }
-#nav-item active{
-	color:var(--cornav);
-	background:white;
-}
-#nav-item:nth-child(1):hover{
-	color:black;
-	background:white;
-}
-#nav-item:nth-child(2):hover{
-	color:black;
-	background:white;
-
-}
-#nav-item:nth-child(3):hover{
+#nav-item:hover,#portal:hover{
 	color:black;
 	background:white;
 }
@@ -75,6 +62,9 @@ nav #nav-item{
 	background-color: white;
 	overflow: hidden;
 
+}
+img{
+	pointer-events: none;
 }
 #projeto img {
 	height: 100%;
@@ -124,4 +114,35 @@ nav #nav-item{
 	width: 100%;
 	position: static;
 	z-index: 1;
+}
+#logo{
+	position: absolute;
+	top:5px;
+	left: 10px;
+	height: 40px;
+}
+#portal{
+	position: absolute;
+	top:0px;
+	right: 10px;
+	height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+  	justify-content: space-around;
+	align-items: center;
+}
+#portal img{
+	height: 45%;
+	flex: 1;
+	text-align: center;
+
+}
+#portal span{
+	height: 45%;
+	flex: 1;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 5%;
+
 }
