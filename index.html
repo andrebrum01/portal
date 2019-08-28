@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fundação Matias Machline</title>
+	<meta charset="utf-8">
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="icon" type="imagem/png" href="imagem/icon_fmm.png">
+<body>
+	<nav id="nav-roler" class="inicio">
+		<a id="nav-item" href="#projeto">PROJETO SOCIAL</a>
+		<a id="nav-item" href="#educacao">EDUCAÇÃO</a>
+		<a id="nav-item" href="#atuacao">ATUAÇÃO</a>
+	</nav>
+	<div id="media">
+		<a href="https://www.facebook.com/FMatiasMachline/" target="blank"><img id="facebook" src="imagem/faceicon.png"/>	
+		</a>
+		<a href="https://www.instagram.com/fmatiasmachline/" target="blank"><img id="facebook" src="imagem/instagranicon.png"/></a>
+		<a href="https://twitter.com/FMatiasMachline" target="blank"><img id="facebook" src="imagem/twittericon.png"/></a>
+	</div>
+	<section class="projeto">
+		<div id="projeto">
+			<img src="imagem/img1.jpeg" alt>
+			<img src="imagem/img2.jpeg" alt>
+			<img src="imagem/img3.jpeg" alt>
+			<img src="imagem/img1.jpeg" alt>
+
+		</div>
+	</section>
+	<section class="aa">
+		<div id="educacao"></div>
+	</section>
+	<section class="ultimo">
+		<div id="atuacao"></div>
+	</section>
+</body>
+</html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).scroll(function() {    
+var scroll = $(window).scrollTop();
+  if (scroll >= 100) {
+    $("#nav-roler").addClass("depois");
+  } else {
+    $("#nav-roler").removeClass("depois"); 
+  }
+});
+</script>
