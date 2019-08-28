@@ -23,13 +23,13 @@ display: flex;
 flex-wrap:wrap;
 flex-direction: row;
 justify-content: center;
-transition: linear 1s;
+transition: linear .8s;
 position: fixed;
 top: 0;
 left: 0;
 right: 0;
 margin: auto auto;
-z-index: 1
+z-index: 1;
 }
 .inicio{
 	background-color:  rgba(0,0,0,0.4);
