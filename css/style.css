@@ -63,14 +63,7 @@ nav #nav-item{
 	overflow: hidden;
 
 }
-@media only screen and (max-width: 800px){
-.projeto{
-	height: auto;
-	background-color: white;
-	overflow: hidden;
 
-}
-}
 img{
 	pointer-events: none;
 }
@@ -200,4 +193,15 @@ hr{
 	background: gray;
 	height: 49%;
 	width: 100%;
+}
+@media only screen and (max-width: 800px){
+.projeto{
+	height: auto;
+	background-color: white;
+	overflow: hidden;
+
+}
+.educacao{
+	height: auto;
+	flex-direction: column;
 }
