@@ -91,10 +91,6 @@ img{
   	font-size: 0;
 	animation: 15s slidy infinite;
 }
-.aa{
-    height: 100%;
-	background-color: black;
-}
 
 .ultimo{
     height: 100%;
@@ -153,4 +149,55 @@ img{
 	vertical-align: middle;
 	margin-bottom: 5%;
 
+}
+
+.educacao{
+    height: 100%;
+	background-color: white;
+	margin: 0px;
+	padding:0px;
+	overflow: hidden;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#quadro{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	height: calc(98%);
+	width: calc(95%/3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.imagem{
+	height: 49%;
+	width: 100%;
+}
+hr{
+	width: 100%;
+	height: 1.5px;
+	background: green;
+}
+.Quadro1{
+	background-image: url(../imagem/carne.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+.Quadro2{
+	background-image: url(../imagem/dormindo.jpg);
+	background-size: cover;
+	background-position: right top;
+}
+.Quadro3{
+	background-image: url(../imagem/invasao.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+#textoQuadro{
+	background: gray;
+	height: 49%;
+	width: 100%;
 }
