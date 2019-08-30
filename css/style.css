@@ -172,7 +172,8 @@ img{
 hr{
 	width: 100%;
 	height: 1.5px;
-	background: green;
+	background: #a6ce39;
+	border-radius: 100%;
 }
 .Quadro1{
 	background-image: url(../imagem/carne.jpg);
