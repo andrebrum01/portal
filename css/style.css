@@ -164,6 +164,7 @@ img{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	padding:5px;
 }
 .imagem{
 	height: 49%;
