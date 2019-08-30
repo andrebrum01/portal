@@ -172,9 +172,10 @@ img{
 }
 hr{
 	width: 100%;
-	height: 1.5px;
+	height: 1px;
 	background: #a6ce39;
-	border-radius: 1px;
+	border-radius: 2px;
+	border:dotted;
 }
 .Quadro1{
 	background-image: url(../imagem/carne.jpg);
