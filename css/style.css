@@ -4,10 +4,6 @@
 75% { left: -200%; }
 100%{ left:-300%; }
 }
-:root{
- --azulback : #ffbd59;
- --cornav: #ff914d;
-}
 body,html{
 	margin: 0px auto;
 	padding: 0px auto;
@@ -63,7 +59,6 @@ nav #nav-item{
 	overflow: hidden;
 
 }
-
 img{
 	pointer-events: none;
 }
@@ -164,18 +159,10 @@ img{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding:5px;
 }
 .imagem{
 	height: 49%;
 	width: 100%;
-}
-hr{
-	width: 100%;
-	height: 1px;
-	background: #a6ce39;
-	border-radius: 2px;
-	border:dotted;
 }
 .Quadro1{
 	background-image: url(../imagem/carne.jpg);
@@ -193,10 +180,29 @@ hr{
 	background-position: center center;
 }
 #textoQuadro{
-	background: gray;
 	height: 49%;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+#textoMesmo{
+	max-width: 100%;
+	align-items: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#textoQuadro h2{
+	text-align: center;
+	width: 100%;
+}
+
+#textoQuadro p{
+	text-align: justify;
+	height: auto;
+	width: auto;
+}
+
 @media only screen and (max-width: 800px){
 .projeto{
 	height: auto;
@@ -205,6 +211,15 @@ hr{
 
 }
 .educacao{
-	height: auto;
+	height: 1500px;
+	width: 100%;
 	flex-direction: column;
+	align-items: center;
+}
+#quadro{
+	width: 75%;
+}
+#textoQuadro{
+	align-items: center;
+}
 }
