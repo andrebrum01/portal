@@ -18,7 +18,7 @@ body,html{
     height:100%;
 	background:  rgba(0,0,0,0);
 }
-input[type=checkbox] {
+#toggle {
 	visibility: hidden;
 }
 
@@ -172,17 +172,20 @@ img{
 	background-position: center center;
 }
 #textoQuadro{
-	height: 49%;
+	height: 50%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: top;
 }
 #textoMesmo{
 	max-width: 100%;
+	height: 100%;
 	align-items: center;
 	padding-left: 5%;
 	padding-right: 5%;
+	display: flex;
+	justify-content: left;
 }
 #textoQuadro h2{
 	color:var(--greenFundacao);
@@ -279,11 +282,11 @@ box-shadow:inset var(--greenFundacao) -5px 0px;
 	background-position: center;
 	transition: ease-in-out 0.5s ;
 }
-input[type=checkbox]:checked ~ #box{
+#toggle:checked ~ #box{
 	visibility: visible;
 
 }
-input[type=checkbox]:checked ~ #hamburger{
+#toggle:checked ~ #hamburger{
 	background-color: var(--greenFundacao);
 	background-image: url(../imagem/x.png);
 
