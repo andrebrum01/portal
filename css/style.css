@@ -4,6 +4,7 @@
 75% { left: -200%; }
 100%{ left:-300%; }
 }
+
 :root{
 --greenFundacao:#bfd73e;
 --blueFundacao:#006c95;
@@ -17,7 +18,19 @@ body,html{
     height:100%;
 	background:  rgba(0,0,0,0);
 }
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+#box{
+	line-height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: top;
+	align-items: center;
+}
 #nav-roler{
+height: 50px;
 align-items: center;
 display: flex;
 flex-wrap:wrap;
@@ -38,7 +51,7 @@ z-index: 1;
 .depois{
 	background-color:  rgba(0,0,0,0.8);
 }
-nav #nav-item{
+#nav-item{
 	line-height: 50px;
 	height: 100%;
 	font-size: 20px;
@@ -53,7 +66,7 @@ nav #nav-item{
 	padding-right: 5px;
 	white-space: nowrap;
 }
-#nav-item:hover,#portal:hover{
+#nav-item:hover{
 	color:black;
 	background:white;
 }
@@ -116,31 +129,6 @@ img{
 	top:5px;
 	left: 10px;
 	height: 40px;
-}
-#portal{
-	position: absolute;
-	top:0px;
-	right: 10px;
-	height: 100%;
-	color: white;
-	display: flex;
-	flex-direction: column;
-  	justify-content: space-around;
-	align-items: center;
-}
-#portal img{
-	height: 45%;
-	flex: 1;
-	text-align: center;
-
-}
-#portal span{
-	height: 45%;
-	flex: 1;
-	text-align: center;
-	vertical-align: middle;
-	margin-bottom: 5%;
-
 }
 
 .educacao{
@@ -247,5 +235,57 @@ content: '';
 }
 #quadro{
 	width: 75%;
+}
+#box{
+	flex-direction: column;
+	position: fixed;
+	height: calc(100%-50px);
+	top:50px;
+	left: 0px;
+	bottom: 0px;
+	background-color: var(--blueFundacao);
+	visibility: hidden;
+}
+#nav-item{
+	width: 100%;
+	height: auto;
+}
+#nav-roler{
+	justify-content: center;
+
+}
+#logo{
+	position: static;
+	top:5px;
+	left: 10px;
+	height: 40px;
+}
+#nav-item:hover{
+box-shadow:inset var(--greenFundacao) -5px 0px;
+}
+#hamburger {
+	position: absolute;
+	background: #08C;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 100%;
+	color: white;
+	font-weight: bold;
+	top:10px;
+	left: 10px;
+	height:30px;
+	width: 30px;
+	background-image: url(../imagem/hamb.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: ease-in-out 0.5s ;
+}
+input[type=checkbox]:checked ~ #box{
+	visibility: visible;
+
+}
+input[type=checkbox]:checked ~ #hamburger{
+	background-color: var(--greenFundacao);
+	background-image: url(../imagem/x.png);
+
 }
 }
