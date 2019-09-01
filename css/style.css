@@ -4,6 +4,10 @@
 75% { left: -200%; }
 100%{ left:-300%; }
 }
+:root{
+--greenFundacao:#bfd73e;
+--blueFundacao:#006c95;
+}
 body,html{
 	margin: 0px auto;
 	padding: 0px auto;
@@ -193,14 +197,39 @@ img{
 	padding-right: 5%;
 }
 #textoQuadro h2{
-	text-align: center;
-	width: 100%;
+	color:var(--greenFundacao);
+	line-height: 2;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 100;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	grid-gap: 5px;
+	align-items: center;
+	font-size: 21px;
+}
+#textoQuadro h2:before,h2:after{
+display: block;
+height: 2px;
+width: 100%;
+content: '';
+}
+#textoQuadro h2:before{
+	background-image: linear-gradient(90deg ,var(--blueFundacao),var(--greenFundacao));
 }
 
-#textoQuadro p{
+#textoQuadro h2:after{
+	background-image: linear-gradient(-90deg ,var(--blueFundacao),var(--greenFundacao));
+}
+
+#textoMesmo p{
 	text-align: justify;
 	height: auto;
 	width: auto;
+	font-size: 12px;
+	color: var(--blueFundacao);
+	text-transform: uppercase;
+
 }
 
 @media only screen and (max-width: 800px){
@@ -218,8 +247,5 @@ img{
 }
 #quadro{
 	width: 75%;
-}
-#textoQuadro{
-	align-items: center;
 }
 }
