@@ -226,13 +226,13 @@ content: '';
 
 }
 
-#atuacao{
+div #atuacao{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-
 }
-.titleBottom{
+
+p.titleBottom{
 	text-transform: uppercase;
 	font-size: 15px;
 	letter-spacing: 1px;
@@ -241,7 +241,7 @@ content: '';
 	text-shadow:black 0px 0px 3px;
 
 }
-.quem{
+p.quem{
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
